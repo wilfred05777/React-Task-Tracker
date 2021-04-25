@@ -1,3 +1,4 @@
+import Task from "./Task";
 // import { useState } from "react";
 
 // const tasks = [
@@ -22,7 +23,7 @@
 // ];
 
 // export const Tasks = (props) => {
-export const Tasks = ({ tasks }) => {
+export const Tasks = ({ tasks, onDelete }) => {
   //   const [tasks, setTasks] = useState([
   //     {
   //       id: 1,
@@ -47,7 +48,8 @@ export const Tasks = ({ tasks }) => {
   return (
     <>
       {tasks.map((tasks) => (
-        <h3 key={tasks.id}>{tasks.text}</h3>
+        // <h3 key={tasks.id}>{tasks.text}</h3>
+        <Task key={tasks.id} task={tasks} onDelete={onDelete} />
       ))}
     </>
   );
