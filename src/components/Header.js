@@ -19,6 +19,7 @@ const Header = ({ title, onAdd }) => {
       {/* <h1 style={headingStyle}>{title}</h1> */}
       <h1>{title}</h1>
       {/* <Button color="green" text="Add" onClick={onClick} /> */}
+      {/* button toggle - https://www.youtube.com/watch?v=w7ejDZ8SWv8 */}
       <Button color="green" text="Add" onClick={onAdd} />
     </header>
   );
