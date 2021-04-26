@@ -7,7 +7,7 @@ import Button from "./Button";
 // };
 
 // const Header = (props) => {
-const Header = ({ title }) => {
+const Header = ({ title, onAdd }) => {
   return (
     <header className="header">
       {/* <h1>Task Tracker</h1> */}
