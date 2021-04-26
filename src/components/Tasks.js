@@ -23,7 +23,7 @@ import Task from "./Task";
 // ];
 
 // export const Tasks = (props) => {
-export const Tasks = ({ tasks, onDelete }) => {
+export const Tasks = ({ tasks, onDelete, onToggle }) => {
   //   const [tasks, setTasks] = useState([
   //     {
   //       id: 1,
@@ -49,7 +49,12 @@ export const Tasks = ({ tasks, onDelete }) => {
     <>
       {tasks.map((tasks) => (
         // <h3 key={tasks.id}>{tasks.text}</h3>
-        <Task key={tasks.id} task={tasks} onDelete={onDelete} />
+        <Task
+          key={tasks.id}
+          task={tasks}
+          onDelete={onDelete}
+          onToggle={onToggle}
+        />
       ))}
     </>
   );
